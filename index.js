@@ -12,6 +12,9 @@ app.get('/', (req, res, next) => {
 	res.send('node express api <br> by adsoft');
 });
 
+app.get('/dev-hours', (req, res, next) => {
+	res.sendfile("assets/1a_dev_hours.json");
+});
 
 // app.get('/header', (req, res, next) => {
 //   res.sendfile("assets/header.json");
