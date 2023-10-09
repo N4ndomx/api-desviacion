@@ -16,6 +16,10 @@ app.get('/dev-hours', (req, res, next) => {
 	res.sendfile("assets/1a_dev_hours.json");
 });
 
+app.get('/proxy-size', (req, res, next) => {
+	res.sendfile("assets/1a_proxy_size.json");
+});
+
 // app.get('/header', (req, res, next) => {
 //   res.sendfile("assets/header.json");
 // });
