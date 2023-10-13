@@ -23,7 +23,9 @@ jobs:
       - name: show dir, .env file
         run: |
           cat .env 
-          
+
+      - name: imprim secets
+        run: echo  "${{secrets.DOCKER_USER}}/${{secrets.MODEL_NAME}}:${{github.sha}} "
       - name: Build the custom Docker image
         run: docker build -t ${{secrets.DOCKER_USER}}/${{secrets.MODEL_NAME}}:${{github.sha}} .
 
